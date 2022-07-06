@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+/* add a container to show that now the container is the parent container as opposed to the body and the yellow div is being defined by the black container as opposed to the body. And since the blue and red div is not in the container, it is still subject to the body and is being pushed down by the black container. After showing the difference, add a top position to the blue div and set it to 0 to show that now the blue div is inside the black container or at the top of the body which happens to also be where the black container is. After showing what happens, do the same for the red square. Then also, change the blue position to fixed and add some h1 Hello World text, maybe about 15 then scroll down to show that the blue div will be stuck to the screen. Sort of what you would do with a nav bar.*/
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+}
+
+.yellow {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: absolute;
+  left: 200px;
+  /* top: 200px; */
+}
+
+
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+
+  /* change the position from absolute to fixed then add some h1 text and scroll down to show that the blue div is now stuck and will remain on screen even after scrolling. This is used most often with nav bars. */
+  
+  position: fixed;
+  /* add a top container to show that the blue div is now set at the top of the body which happens to be also where the black container is located. */
+  top: 0;
+  }
+
+
+.red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  left: 100px;
+  /* add a top container to show that the blue div is now set at the top of the body which happens to be also where the black container is located. */
+  top: 0;
+}
